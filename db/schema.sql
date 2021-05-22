@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS limited_db;
+
+CREATE DATABASE limited_db;
