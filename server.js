@@ -47,7 +47,7 @@ if (process.env.NODE_ENV === "test") {
 //   });
 // });
 
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => {
     console.log(`==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.`);
   });
