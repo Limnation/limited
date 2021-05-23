@@ -12,7 +12,7 @@ Design.init(
       autoIncrement: true,
     },
     designs: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(150),
       allowNull: false,
     },
   },

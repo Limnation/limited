@@ -11,24 +11,24 @@ class User extends Model {
 User.init(
   {
     id: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.INTEGER(7),
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
     username: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(50),
       allowNull: false,
     },
     password: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(25),
       allowNull: false,
       validate: {
         len: [2, 10],
       },
     },
     email: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(75),
       allowNull: false,
       isUnique: true,
       validate: {
@@ -41,15 +41,15 @@ User.init(
       allowNull: false,
     },
     city: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(50),
       allowNull: false,
     },
     state: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(2),
       allowNull: false,
     },
     zip_code: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(10),
       allowNull: false,
     },  
   },

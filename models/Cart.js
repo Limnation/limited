@@ -20,7 +20,7 @@ Cart.init(
     //   },
     // },
     size: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.INTEGER(5),
       allowNull: false,
     },
     // design: {
