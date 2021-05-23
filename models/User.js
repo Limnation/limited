@@ -27,6 +27,31 @@ User.init(
         len: [2, 10],
       },
     },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      isUnique: true,
+      validate: {
+        isEmail: true,
+        msg:'Valid and unique email required'
+      }
+    },
+    street: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    city: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    state: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    zip_code: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },  
   },
   {
     hooks: {
