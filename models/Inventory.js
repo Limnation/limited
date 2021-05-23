@@ -12,15 +12,15 @@ Inventory.init(
       autoIncrement: true,
     },
     product_name: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(100),
       allowNull: false,
     },
     price: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DECIMAL(10,2),
       allowNull: false,
     },
     stock: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.INTEGER(100),
       allowNull: true,
     },
   },
