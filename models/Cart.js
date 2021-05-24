@@ -11,14 +11,14 @@ Cart.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    // item: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    //   references: {
-    //     model: "Inventory",
-    //     key: "id",
-    //   },
-    // },
+    item: {
+      type: DataTypes.INTEGER(100),
+      allowNull: false,
+      // references: {
+      //   model: "Inventory",
+      //   key: "id",
+      // },
+    },
     size: {
       type: DataTypes.INTEGER(5),
       allowNull: false,

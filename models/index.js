@@ -12,10 +12,10 @@ Cart.belongsTo(User, {
   onDelete: "CASCADE",
 });
 
-Design.belongsTo(Cart, {
-  foreignKey: "cart_id",
-  onDelete: "CASCADE",
-});
+// Design.belongsTo(Cart, {
+//   foreignKey: "cart_id",
+//   onDelete: "CASCADE",
+// });
 
 Inventory.belongsTo(Cart, {
   foreignKey: "cart_id",
