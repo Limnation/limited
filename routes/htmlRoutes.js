@@ -1,4 +1,4 @@
-var db = require("../models");
+var db = require("../../models");
 
 module.exports = function(app) {
   // Load index page
@@ -25,3 +25,84 @@ module.exports = function(app) {
     res.render("404");
   });
 };
+
+
+//==============================================
+
+const router = require('express').Router();
+const { Cart, Design, Inventory, User } = require('../../models');
+
+// GET all carts
+router.get('/', async (req, res) => {
+  try {
+
+  } catch (err) {
+   
+  }
+});
+
+// GET all designs
+router.get('/', async (req, res) => {
+  try {
+
+  } catch (err) {
+   
+  }
+});
+
+// GET all inventories
+router.get('/', async (req, res) => {
+  try {
+
+  } catch (err) {
+   
+  }
+});
+
+
+
+
+// GET one cart
+router.get('/:id', async (req, res) => {
+  try {
+
+  } catch (err) {
+    
+  }
+});
+
+// GET one design
+router.get('/:id', async (req, res) => {
+  try {
+
+  } catch (err) {
+    
+  }
+});
+
+// GET one inventory
+router.get('/:id', async (req, res) => {
+  try {
+
+  } catch (err) {
+    
+  }
+});
+
+
+
+// DELETE a card.
+// activity 22 solved/routes/libraryCardRoutes, line 49.
+router.delete('/:id', async (req, res) => {
+  try {
+ 
+  } catch (err) {
+ 
+  }
+});
+
+
+// update a cart item by its `id` value
+router.put('/:id', (req, res) => {
+  
+});

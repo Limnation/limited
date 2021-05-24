@@ -1,56 +1,20 @@
-// change
-require("dotenv").config();
-var express = require("express");
-var exphbs = require("express-handlebars");
+const express = require('express');
+const sequelize = require('./config/connection');
+const routes = require('./routes');
+// import sequelize connection
 
-var db = require("./models");
+const app = express();
+const PORT = process.env.PORT || 3001;
 
-var app = express();
-var PORT = process.env.PORT || 3000;
-
-const sequelize = require("./config/connection");
-
-// Middleware
-app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
 
-// Handlebars
-app.engine(
-  "handlebars",
-  exphbs({
-    defaultLayout: "main",
-  })
-);
-app.set("view engine", "handlebars");
+app.use(routes);
 
-// Routes
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
-
-var syncOptions = { force: false };
-
-// If running a test, set syncOptions.force to true
-// clearing the `testdb`
-if (process.env.NODE_ENV === "test") {
-  syncOptions.force = true;
-}
-
-// Starting the server, syncing our models ------------------------------------/
-// db.sequelize.sync(syncOptions).then(function() {
-//   app.listen(PORT, function() {
-//     console.log(
-//       "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
-//       PORT,
-//       PORT
-//     );
-//   });
-// });
-
-sequelize.sync({ force: false }).then(() => {
+// sync sequelize models to the database, then turn on the server.
+// Force true to drop/recreate table(s) on every sync.
+sequelize.sync({ force:false}).then(() => {
   app.listen(PORT, () => {
-    console.log(`==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.`);
-  });
+    console.log(`App listening on port ${PORT}!`);
+})
 });
-
-module.exports = app;
