@@ -21,7 +21,7 @@ User.init(
       allowNull: false,
     },
     password: {
-      type: DataTypes.STRING(25),
+      type: DataTypes.STRING(150),
       allowNull: false,
       validate: {
         len: [2, 10],
@@ -31,10 +31,10 @@ User.init(
       type: DataTypes.STRING(75),
       allowNull: false,
       isUnique: true,
-      validate: {
-        isEmail: true,
-        msg:'Valid and unique email required'
-      }
+      // validate: {
+      //   isEmail: true,
+      //   msg:'Valid and unique email required'
+      // }
     },
     street: {
       type: DataTypes.STRING,

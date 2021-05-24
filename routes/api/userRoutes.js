@@ -53,9 +53,12 @@ router.get('/:id', async (req, res) => {
     try {
       const userData = await User.create({
         username: req.body.username,
-        email: req.body.email,
         password: req.body.password,
-        numberOfPets: req.body.numberOfPets,
+        email: req.body.email,
+        street: req.body.street,
+        city: req.body.city,
+        state: req.body.state,
+        zip_code: req.body.zip_code,
       });
       res.status(200).json(userData);
     } catch (err) {
