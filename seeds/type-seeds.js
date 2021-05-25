@@ -14,13 +14,13 @@ const typeData = [
     type_name: "Low-Top-Sneaker",
   },
   {
-    type_name: "High-top-Canvas-White",
+    type_name: "High-Top-Canvas-White",
   },
   {
-    type_name: "High-top-Canvas-Black",
+    type_name: "High-Top-Canvas-Black",
   },
   {
-    type_name: "flip-flops",
+    type_name: "Flip-Flops",
   },
   {
     type_name: "Slide-Shoes",
