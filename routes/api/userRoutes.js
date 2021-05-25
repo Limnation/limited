@@ -5,7 +5,7 @@ const {Cart, Inventory, User} = require('../../models/');
 router.get('/', async (req, res) => {
   try {
   // find all user
-  const UserData = await User.findAll({
+  const userData = await User.findAll({
       // be sure to include its associated Products
       include: [
         { 
@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
   ],
     });
 
-    res.status(200).json(UserData);
+    res.status(200).json(userData);
 } catch (err) {
   res.status(500).json(err);
 }
@@ -66,5 +66,21 @@ router.get('/:id', async (req, res) => {
     }
   });
 
+
+  // DELETE a user.
+// activity 22 solved/routes/libraryCardRoutes, line 49.
+router.delete('/:id', async (req, res) => {
+  try {
+ 
+  } catch (err) {
+ 
+  }
+});
+
+
+// update a user item by its `id` value
+router.put('/:id', (req, res) => {
+  
+});
 
   module.exports = router;
