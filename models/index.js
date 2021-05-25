@@ -1,35 +1,31 @@
 const Cart = require("./Cart");
-const Inventory = require("./Inventory");
+const Product = require("./Product");
 const User = require("./User");
-const Design = require("./Design");
+const Type = require("./Type");
 
-// belongsTo: adds the user_id column to the Cart table.
-//            in other words, it adds the user_id column as a foreignKey in the Cart table
-//            linking the Cart table and the User table via the id column in the User table
-//            and the user_id foreignKey column in the Cart table.
-// Cart.belongsTo(User, {
-//   foreignKey: "user_id",
-//   onDelete: "CASCADE",
-// });
-
+// User.hasOne(Cart) will create a one-to-one association with User as the source and Cart as the target. This means the foreign key for Cart will be added to the User model (inverse of belongsTo).
 User.hasOne(Cart, {
   foreignKey: "user_id",
   onDelete: "CASCADE",
-})
+});
 
-// Design.belongsTo(Cart, {
-//   foreignKey: "cart_id",
-//   onDelete: "CASCADE",
-// });
+// Product.hasOne(Cart) will create a one-to-one association with Product as the source and Cart as the target. This means the foreign key for Cart will be added to the Product model (inverse of belongsTo).
+Product.hasOne(Cart, {
+  // product_id is a foreign key in the Cart table.
+  foreignKey: "product_id",
+  onDelete: "CASCADE",
+});
 
-Inventory.belongsTo(Cart, {
-  foreignKey: "cart_id",
+// Type.hasOne(Product) will create a one-to-one association with Type as the source and Product as the target. This means the foreign key for Product will be added to the Type model (inverse of belongsTo).
+Type.hasOne(Product, {
+  // type_id is a foreign key in the Product table.
+  foreignKey: "type_id",
   onDelete: "CASCADE",
 });
 
 module.exports = {
   Cart,
-  Inventory,
+  Product,
   User,
-  Design,
+  Type,
 };
