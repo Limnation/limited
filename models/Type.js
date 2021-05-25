@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Design extends Model {}
+class Type extends Model {}
 
-Design.init(
+Type.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,7 +11,7 @@ Design.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    designs: {
+    type_name: {
       type: DataTypes.STRING(150),
       allowNull: false,
     },
@@ -22,4 +22,4 @@ Design.init(
   }
 );
 
-module.exports = Design;
+module.exports = Type;

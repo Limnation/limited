@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Inventory extends Model {}
+class Product extends Model {}
 
-Inventory.init(
+Product.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -14,14 +14,14 @@ Inventory.init(
     product_name: {
       type: DataTypes.STRING(100),
       allowNull: false,
+    }, 
+    stock: {
+      type: DataTypes.INTEGER(100),
+      allowNull: true,
     },
     price: {
       type: DataTypes.DECIMAL(10,2),
       allowNull: false,
-    },
-    stock: {
-      type: DataTypes.INTEGER(100),
-      allowNull: true,
     },
   },
   {
@@ -30,4 +30,4 @@ Inventory.init(
   }
 );
 
-module.exports = Inventory;
+module.exports = Product;
