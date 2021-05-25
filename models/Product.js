@@ -14,13 +14,17 @@ Product.init(
     product_name: {
       type: DataTypes.STRING(100),
       allowNull: false,
-    }, 
+    },
+    image_name: {
+      type: DataTypes.STRING(255),
+      allowNull: false,
+    },
     stock: {
       type: DataTypes.INTEGER(100),
       allowNull: true,
     },
     price: {
-      type: DataTypes.DECIMAL(10,2),
+      type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
     },
   },
