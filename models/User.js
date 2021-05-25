@@ -28,13 +28,13 @@ User.init(
       },
     },
     email: {
-      type: DataTypes.STRING(75),
+      type: DataTypes.STRING,
       allowNull: false,
-      isUnique: true,
+      unique: true,
       // validate: {
       //   isEmail: true,
       //   msg:'Valid and unique email required'
-      // }
+      // },
     },
     street: {
       type: DataTypes.STRING,
