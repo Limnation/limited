@@ -1,4 +1,4 @@
-const { Cart } = require('../models');
+const { Cart } = require("../models");
 
 const cartData = [
   {
@@ -21,7 +21,6 @@ const cartData = [
     user_id: 3,
     product_id: 4,
   },
-  
 ];
 
 const seedCarts = () => Cart.bulkCreate(cartData);
