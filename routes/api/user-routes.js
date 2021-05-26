@@ -1,46 +1,46 @@
 const router = require('express').Router();
-const {Cart, Inventory, User} = require('../../models/');
+const {Cart, Inventory, User} = require('../../models');
 
-// GET all carts
+// GET all users
 router.get('/', async (req, res) => {
   try {
-  // find all carts
-  const cartData = await Cart.findAll({
+  // find all user
+  const userData = await User.findAll({
       // be sure to include its associated Products
       include: [
         { 
-          model: Inventory,
-        //   attributes: ['item','size'], 
+          model: Cart,
+          attributes: ['item','size'], 
     },
   ],
     });
 
-    res.status(200).json(cartData);
+    res.status(200).json(userData);
 } catch (err) {
   res.status(500).json(err);
 }
 });
 
-// GET one cart
+// GET one user
 // hw13 category-routes.js 
 router.get('/:id', async (req, res) => {
 
   // find one user by its `id` value
   // be sure to include its associated carts
   try {
-    const cartData = await Cart.findOne({
+    const userData = await User.findOne({
       where: {
         id: req.params.id,
       },
-      include: [{ model: Inventory,
-        //   attributes: ['item','size'], 
+      include: [{ model: Cart,
+          attributes: ['item','size'], 
     }],
     });
-    if (!cartData) {
-      res.status(404).json({ message: 'No cart found with this id!' });
+    if (!userData) {
+      res.status(404).json({ message: 'No user found with this id!' });
       return;
     }
-    res.status(200).json(cartData);
+    res.status(200).json(userData);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -51,18 +51,18 @@ router.get('/:id', async (req, res) => {
   // Activity 19 routes/api/userRoutes, line 19.
   router.post('/', async (req, res) => {
     try {
-//       const userData = await User.create({
-//         username: req.body.username,
-//         password: req.body.password,
-//         email: req.body.email,
-//         street: req.body.street,
-//         city: req.body.city,
-//         state: req.body.state,
-//         zip_code: req.body.zip_code,
-//       });
-//       res.status(200).json(userData);
+      const userData = await User.create({
+        username: req.body.username,
+        password: req.body.password,
+        email: req.body.email,
+        street: req.body.street,
+        city: req.body.city,
+        state: req.body.state,
+        zip_code: req.body.zip_code,
+      });
+      res.status(200).json(userData);
     } catch (err) {
-//       res.status(400).json(err);
+      res.status(400).json(err);
     }
   });
 
@@ -78,7 +78,7 @@ router.delete('/:id', async (req, res) => {
 });
 
 
-// update a cart item by its `id` value
+// update a user item by its `id` value
 router.put('/:id', (req, res) => {
   
 });

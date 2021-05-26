@@ -14,7 +14,7 @@ const cartData = [
   {
     quantity: 1,
     user_id: 2,
-    product_id: 3,
+    product_id: 1,
   },
   {
     quantity: 1,

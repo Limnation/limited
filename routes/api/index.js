@@ -1,10 +1,9 @@
-//activity 11, routes/api/index.js
-const router = require('express').Router();
+const router = require("express").Router();
 
-const userRoutes = require('./userRoutes');
-const cartRoutes = require('./cartRoutes');
+const userRoutes = require("./user-routes");
+const cartRoutes = require("./cart-routes");
 
-router.use('/users', userRoutes);
-router.use('/carts', cartRoutes);
+router.use("/users", userRoutes);
+router.use("/carts", cartRoutes);
 
 module.exports = router;
