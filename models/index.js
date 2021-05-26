@@ -4,13 +4,18 @@ const User = require("./User");
 const Type = require("./Type");
 
 // User.hasOne(Cart) will create a one-to-one association with User as the source and Cart as the target. This means the foreign key for Cart will be added to the User model (inverse of belongsTo).
-User.hasOne(Cart, {
+Cart.belongsTo(User, {
   foreignKey: "user_id",
   onDelete: "CASCADE",
 });
 
-// Product.hasOne(Cart) will create a one-to-one association with Product as the source and Cart as the target. This means the foreign key for Cart will be added to the Product model (inverse of belongsTo).
-Product.hasOne(Cart, {
+Cart.belongsTo(Product, {
+  foreignKey: "product_id",
+  onDelete: "CASCADE",
+});
+
+//Product.hasMany(Cart);
+Product.hasMany(Cart, {
   // product_id is a foreign key in the Cart table.
   foreignKey: "product_id",
   onDelete: "CASCADE",
