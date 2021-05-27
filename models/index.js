@@ -21,12 +21,19 @@ Product.hasMany(Cart, {
   onDelete: "CASCADE",
 });
 
+Product.belongsTo(Type, {
+  foreignKey: "type_id",
+  onDelete: "CASCADE",
+})
+
 // Type.hasOne(Product) will create a one-to-one association with Type as the source and Product as the target. This means the foreign key for Product will be added to the Type model (inverse of belongsTo).
-Type.hasOne(Product, {
+Type.hasMany(Product, {
   // type_id is a foreign key in the Product table.
   foreignKey: "type_id",
   onDelete: "CASCADE",
 });
+
+
 
 module.exports = {
   Cart,
