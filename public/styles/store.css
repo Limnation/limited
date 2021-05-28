@@ -46,6 +46,7 @@ aside h3 {
 
 .li-footwear {
   width: 100%;
+  padding: 0% 0% 0% 0%;
   font-family: var(--primary-fonts);
   font-size: 27px;
   color: var(--yellow-color);
