@@ -1,0 +1,28 @@
+/* Place the navbar at the bottom of the page */
+.bottomNav {
+  background-color: #252b2b;
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.bottomNav a {
+  float: left;
+  display: block;
+  color: #66dbec;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.bottomNav a:hover {
+  color: #4c44dd;
+}
+
+/* Add a color to the active/current link */
+.bottomNav a.active {
+  color: #4c44dd;
+}

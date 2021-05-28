@@ -9,76 +9,87 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/homepage.css" rel="stylesheet" />
+    <link href="styles/header.css" rel="stylesheet" />
+    <link href="styles/topnav.css" rel="stylesheet" />
+    <link href="styles/bottomnav.css" rel="stylesheet" />
+    <script src="./js/mobileNavBar.js"></script>
     <title>Limited</title>
   </head>
   <body>
     <!-- Hero/Landing Section -->
     <section class="hero-section">
-      <header>
+      <header class="user-section">
         <!-- might have to be build with JS -->
-        <li><img src="" alt="" /></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
+        <ul>
+          <li class="login-logout"><a href="#">Sign In</a></li>
+          <li class="joins-username"><a href="#">Join Us</a></li>
+          <li class="userIcon">
+            <img src="images/nav/top/userIcon.png" alt="User Icon" />
+          </li>
+        </ul>
       </header>
       <!-- Navigation -->
-      <nav>
-        <ul>
-          <li>
-            <a href="#"><img src="" alt=""/></a>
-          </li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Store</a></li>
-        </ul>
+      <nav class="topnav" id="myTopnav">
+        <!-- Image in Mobile nav version -->
+        <a href="index.html" class="active">
+          <img src="images/nav/top/navLogo.png" alt="Limited" />
+        </a>
+        <a class="navBar" href="#about-us">About Us</a>
+        <a class="navBar" href="/store.html">Store</a>
+        <!-- Hamberger Moble nav icon -->
+        <a href="javascript:void(0);" class="icon" onclick="mobileNavClick()"
+          >&#9776;</a
+        >
       </nav>
       <!-- hero image Background -->
-      <div>
-        <img src="" alt="" />
+      <div class="hero-logo-background">
+        <img
+          src="images/homepage/hero-image-background-gif.gif"
+          alt="Spray Paint"
+        />
       </div>
       <!-- hero image -->
-      <div>
-        <img src="" alt="" />
+      <div class="hero-logo">
+        <img src="images/homepage/hero-image.png" alt="" />
       </div>
     </section>
     <!-- About Us Section -->
-    <section>
+    <section class="about-us-section" id="about-us">
       <!-- About Us Info -->
-      <div>
+      <div class="about-text">
         <h3>About Us</h3>
         <p>About us Text</p>
       </div>
       <!-- About Us Image -->
-      <div>
-        <img src="" alt="" />
+      <div class="about-image">
+        <img src="images/homepage/about-us-image.png" alt="About Us" />
       </div>
     </section>
+
+    <!-- Bottom Nav -->
+    <nav>
+      <div class="bottomNav" id="bottomNav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#store">Store</a>
+      </div>
+      <div class="social">
+        <a href="https://twitter.com/home" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://www.linkedin.com" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/willielibet" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <!-- <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i> -->
+      </div>
+    </nav>
     <!-- Footer -->
     <footer>
-      <!-- Bottom Nav -->
-      <nav>
-        <div>
-          <p>Home</p>
-        </div>
-        <div>
-          <p>About Us</p>
-        </div>
-        <div>
-          <p>Store</p>
-        </div>
-        <div class="social">
-          <a href="https://twitter.com/home" target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a href="https://www.linkedin.com" target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/willielibet" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <!-- <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i> -->
-        </div>
-      </nav>
       <!-- Copy Rights -->
       <p>&#169; Limited Inc. All Right Reserved</p>
     </footer>
