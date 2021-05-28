@@ -1,0 +1,142 @@
+/* font-family: 'Caveat', cursive; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* IE8 and earlier */
+  cursor: pointer;
+}
+
+.hero-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  min-height: 600px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.background {
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -20;
+}
+
+.hero-logo-background {
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  top: 0%;
+  width: 100%;
+  text-align: center;
+  z-index: -10;
+}
+
+.hero-logo-background img {
+  width: 1550px;
+}
+
+.hero-logo {
+  position: absolute;
+  left: 0;
+  top: 19%;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  z-index: -5;
+}
+
+.hero-logo img {
+  width: 765px;
+}
+
+/* About Us Section */
+.about-us-section {
+  height: 70%;
+  width: 100%;
+  min-height: 600px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px;
+  background-color: #161a1a;
+}
+
+.about-text {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.about-text h3 {
+  color: #4c44dd;
+  padding: 100px 0px 30px 100px;
+  text-align: center;
+  font-size: 70px;
+  font-family: "Caveat", "cursive";
+  font-weight: 800px;
+}
+
+.about-text p {
+  color: #3c83fd;
+  padding: 0px 0px 0px 100px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Caveat", "cursive";
+}
+
+.about-image {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
+
+/* Medium devices (Small Mobile phones, 400px to 599px) */
+@media only screen and (min-width: 400px) {
+}
+
+/* Mobile devices (large Mobile phones, 600px to 767px) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (Ipad, 768px and 1023px) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Medium devices (Ipad Pro 1024px and 1223px) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* laptops devices (laptops, 1224px and 1823px) */
+@media only screen and (min-width: 1224px) {
+}
+
+/* Desktops (Desktops, 1824px and up) */
+@media only screen and (min-width: 1824px) {
+}
+
+/* Large Desktops devices (Desktops, 1920px and up) */
+@media only screen and (min-width: 1920px) {
+}

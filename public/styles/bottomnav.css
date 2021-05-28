@@ -1,0 +1,67 @@
+/* Place the navbar at the bottom of the page */
+.botNav {
+  background-color: #252b2b;
+}
+
+.bottomNav {
+  display: inline-block;
+  background-color: #252b2b;
+  overflow: hidden;
+  bottom: 0;
+  width: 40%;
+  padding: 50px 0px;
+}
+
+.bottomNav p {
+  font-family: "Caveat", "cursive";
+  font-size: 30px;
+  padding: 0px 20px 0px 400px;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.bottomNav a {
+  display: block;
+  color: #66dbec;
+  font-family: "Caveat", "cursive";
+  text-align: left;
+  padding: 10px 20px 10px 400px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* Change the color of links on hover */
+.bottomNav a:hover {
+  color: #4c44dd;
+}
+
+/* Add a color to the active/current link */
+.bottomNav a.active {
+  color: #4c44dd;
+}
+
+.social {
+  display: inline-block;
+  width: 59%;
+  padding: 50px 0px;
+  vertical-align: top;
+}
+
+.social p {
+  font-family: "Caveat", "cursive";
+  font-size: 30px;
+  padding: 0px 0px 20px 0px;
+}
+
+.social .fab {
+  margin-right: 10px;
+  height: 60px;
+  width: 60px;
+  line-height: 32px;
+  text-align: center;
+  color: #66dbec;
+}
+
+.fa-facebook {
+  width: 60px;
+}
