@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/store.css" rel="stylesheet" />
+    <link href="styles/header.css" rel="stylesheet" />
+    <link href="styles/topnav.css" rel="stylesheet" />
+    <link href="styles/bottomnav.css" rel="stylesheet" />
+    <link href="styles/footer.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/55f2eac7a6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Limited</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <!-- Hero/Landing Section -->
+    <section class="hero-section">
+      <header class="user-section">
+        <!-- might have to be build with JS -->
+        <ul>
+          <li class="login-logout"><a href="#">Sign In</a></li>
+          <li class="joins-username"><a href="#">Join Us</a></li>
+          <li class="userIcon">
+            <img src="images/nav/top/userIcon.png" alt="User Icon" />
+          </li>
+        </ul>
+      </header>
+      <!-- Navigation -->
+      <nav class="topnav" id="myTopnav">
+        <!-- Image in Mobile nav version -->
+        <a href="index.html" class="active">
+          <img src="images/nav/top/navLogo.png" alt="Limited" />
+        </a>
+        <a class="navBar" href="#about-us">About Us</a>
+        <a class="navBar" href="/store.html">Store</a>
+        <!-- Hamberger Moble nav icon -->
+        <a href="javascript:void(0);" class="icon" onclick="mobileNavClick()"
+          >&#9776;</a
+        >
+      </nav>
+    <!-- Selection Section -->
+    <section>
+      <aside>
+        <h1>Footwear</h1>
+        <!-- Pop list with the DOM from API -->
+        <ul class="ul-footwear">
+          <!-- Example -->
+          <!-- <li class="li-footwear">High-Top-Sneakers</li> -->
+        </ul>
+      </aside>
+      <div>
+        <!-- Pop Footwear Iamges with the DOM from API -->
+        <!-- <div>
+          <img src="" alt="" />
+          <p></p>
+          <p></p>
+        </div> -->
+      </div>
+    </section>
+    <!-- Bottom Nav -->
+    <nav class="botNav">
+      <div class="bottomNav" id="bottomNav">
+        <p><b>SITE MAP</b></p>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#store">Store</a>
+      </div>
+      <div class="social">
+        <p><b>SOCIAL</b></p>
+        <a href="https://twitter.com/home" target="_blank"
+          ><i class="fab fa-twitter fa-3x"></i
+        ></a>
+        <a href="https://www.linkedin.com" target="_blank"
+          ><i class="fab fa-linkedin fa-3x"></i
+        ></a>
+        <a href="https://github.com/" target="_blank"
+          ><i class="fab fa-github fa-3x"></i
+        ></a>
+        <a href="https://facebook.com/" target="_blank"
+          ><i class="fab fa-facebook fa-3x"></i
+        ></a>
+        <a href="https://instagram.com/" target="_blank"
+          ><i class="fab fa-instagram fa-3x"></i
+        ></a>
+      </div>
+    </nav>
+    <!-- Footer -->
+    <footer>
+      <!-- Copy Rights -->
+      <p>&#169; Limited Inc. All Right Reserved</p>
+    </footer>
+  </body>
+</html>
