@@ -29,7 +29,7 @@ function renderProducts(data) {
 function generateHtml(product) {
     return `
     <div class="product">
-        <img src="${product.image_name}" alt="image of ${product.product_name}" />
+        <img src="images/store/Product-image.png" alt="image of ${product.image_name}" />
         <p class="product-name">${product.product_name}</p>
         <p class="product-price">${product.price}</>
     </div>`
