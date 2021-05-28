@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link href="styles/homepage.css" rel="stylesheet" />
+    <link href="styles/store.css" rel="stylesheet" />
     <link href="styles/header.css" rel="stylesheet" />
     <link href="styles/topnav.css" rel="stylesheet" />
     <link href="styles/bottomnav.css" rel="stylesheet" />
@@ -18,10 +18,10 @@
       src="https://kit.fontawesome.com/55f2eac7a6.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/mobileNavBar.js"></script>
     <title>Limited</title>
   </head>
   <body>
+    <!-- Header Section -->
     <!-- Hero/Landing Section -->
     <section class="hero-section">
       <header class="user-section">
@@ -47,51 +47,33 @@
           >&#9776;</a
         >
       </nav>
-      <!-- background -->
-      <div class="background"></div>
-      <!-- hero image Background -->
-      <div class="hero-logo-background">
-        <img
-          src="images/homepage/hero-image-background-gif.gif"
-          alt="Spray Paint"
-        />
-      </div>
-      <!-- hero image -->
-      <div class="hero-logo">
-        <img src="images/homepage/hero-image.png" alt="" />
-      </div>
-    </section>
-    <!-- About Us Section -->
-    <section class="about-us-section" id="about-us">
-      <!-- About Us Info -->
-      <div class="about-text">
-        <h3>About Us</h3>
-        <p>
-          Welcome to Limited , your number one source for all things footwear.
-          We are dedicated to providing you the very best of footwear, with an
-          emphasis on style, creativity, and comfort. Founded in 2021 by
-          A-Plus-Plus, Limited has come a long way from its beginnings in
-          Atlanta. When A-Plus-Plus first started out, their passion for
-          eco-friendly-custom shoes drove them to start their own business. We
-          hope you enjoy our products as much as we enjoy offering them to you.
-          If you have any questions or comments, please don't hesitate to
-          contact us. <br /><br />Sincerely,<br />
-          A-Plus-Plus
-        </p>
-      </div>
-      <!-- About Us Image -->
-      <div class="about-image">
-        <img src="images/homepage/about-us-image.png" alt="About Us" />
+    <!-- Selection Section -->
+    <section class="selection-section">
+      <aside class="types">
+        <h3>Footwear</h3>
+        <!-- Pop list with the DOM from API -->
+        <ul class="ul-footwear">
+          <!-- Example -->
+          <!-- <li class="li-footwear">High-Top-Sneakers</li> -->
+        </ul>
+      </aside><!--
+      --><div class="products">
+        <!-- Pop Footwear Iamges with the DOM from API -->
+        <!--Examples -->
+        <!-- <div class="product">
+          <img src="images/store/Product-image.png" alt="" />
+          <p class="product-name">Product1</p>
+          <p class="product-price">$69.99</p>
+        </div> -->
       </div>
     </section>
-
     <!-- Bottom Nav -->
     <nav class="botNav">
       <div class="bottomNav" id="bottomNav">
         <p><b>SITE MAP</b></p>
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#store">Store</a>
+        <a href="/index.html" class="active">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="/store.html">Shop</a>
       </div>
       <div class="social">
         <p><b>SOCIAL</b></p>
