@@ -1,4 +1,5 @@
 /* font-family: 'Caveat', cursive; */
+/* @375px phone */
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +34,8 @@ a:hover {
   text-align: center;
   height: 100%;
   width: 100%;
-  min-height: 600px;
+  min-height: 500px;
+  max-height: 500px;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
 }
@@ -50,21 +52,21 @@ a:hover {
 .hero-logo-background {
   background-color: #000000;
   position: absolute;
-  left: 0;
-  top: 0%;
+  left: -30%;
+  top: 11%;
   width: 100%;
   text-align: center;
   z-index: -10;
 }
 
 .hero-logo-background img {
-  width: 1550px;
+  width: 700px;
 }
 
 .hero-logo {
   position: absolute;
   left: 0;
-  top: 19%;
+  top: 30%;
   width: 100%;
   text-align: center;
   color: #ffffff;
@@ -72,50 +74,109 @@ a:hover {
 }
 
 .hero-logo img {
-  width: 765px;
+  width: 345px;
 }
 
 /* About Us Section */
 .about-us-section {
-  height: 70%;
+  display: block;
+  height: auto;
   width: 100%;
-  min-height: 600px;
+  min-height: 950px;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px;
   background-color: #161a1a;
 }
 
 .about-text {
-  display: inline-block;
-  width: 50%;
-  vertical-align: top;
+  display: block;
+  height: auto;
+  width: 100%;
 }
 
 .about-text h3 {
   color: #4c44dd;
-  padding: 100px 0px 30px 100px;
+  padding: 30px 90px 30px 90px;
   text-align: center;
-  font-size: 70px;
+  font-size: 55px;
   font-family: "Caveat", "cursive";
   font-weight: 800px;
 }
 
 .about-text p {
   color: #3c83fd;
-  padding: 0px 0px 0px 100px;
+  padding: 0px 35px 45px 35px;
   text-align: center;
-  font-size: 30px;
+  font-size: 22px;
   font-family: "Caveat", "cursive";
 }
 
 .about-image {
-  display: inline-block;
-  width: 49%;
+  display: block;
+  width: 375px;
+  height: auto;
+  margin: 0px auto;
+  padding: 0px 0px 70px 0px;
   text-align: center;
+}
+
+.about-image img {
+  width: 360px;
 }
 
 /* Medium devices (Small Mobile phones, 400px to 599px) */
 @media only screen and (min-width: 400px) {
+  /* Hero Section */
+  .hero-section {
+    min-height: 500px;
+    max-height: 500px;
+  }
+
+  .hero-logo-background {
+    width: 100%;
+    left: -30%;
+    top: 11%;
+  }
+
+  .hero-logo-background img {
+    width: 700px;
+  }
+
+  .hero-logo {
+    top: 30%;
+    width: 100%;
+  }
+
+  .hero-logo img {
+    width: 365px;
+  }
+
+  /* About Us Section */
+  .about-us-section {
+    min-height: 960px;
+  }
+
+  .about-text h3 {
+    padding: 35px 90px 30px 90px;
+    font-size: 60px;
+  }
+
+  .about-text p {
+    padding: 0px 45px 60px 45px;
+    font-size: 22px;
+  }
+
+  .about-image {
+    display: block;
+    width: 400px;
+    height: auto;
+    padding: 0px 0px 70px 0px;
+    margin: 0px auto;
+  }
+
+  .about-image img {
+    width: 380px;
+  }
 }
 
 /* Mobile devices (large Mobile phones, 600px to 767px) */
@@ -168,11 +229,7 @@ a:hover {
   }
 
   .about-image {
-    display: block;
     width: 600px;
-    height: auto;
-    padding: 0px 0px 70px 0px;
-    margin: 0px auto;
   }
 
   .about-image img {
@@ -294,6 +351,7 @@ a:hover {
   .about-text {
     display: inline-block;
     width: 50%;
+    vertical-align: top;
   }
 
   .about-text h3 {
