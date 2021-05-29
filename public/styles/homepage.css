@@ -1,3 +1,4 @@
+/* Use Root Example: font-family: var(--primary-fonts); */
 :root {
   --primary-fonts: "Caveat", "cursive";
   --light-blue-color: #66dbec;
@@ -8,7 +9,7 @@
   --blue-color: #3f83ff;
   --purple-color: #5c46e7;
   --gray-color: #252b2b;
-  --background: #000000;
+  --background-color: #000000;
 }
 
 /* @375px phone */

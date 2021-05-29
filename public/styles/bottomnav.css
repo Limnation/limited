@@ -1,16 +1,3 @@
-/* Use Root Example: font-family: var(--primary-fonts); */
-:root {
-  --primary-fonts: "Caveat", "cursive";
-  --light-blue-color: #66dbec;
-  --red-color: #ee0300;
-  --orange-color: #ef7616;
-  --yellow-color: #f7d422;
-  --green-color: #5cfc01;
-  --blue-color: #3f83ff;
-  --purple-color: #5c46e7;
-  --gray-color: #252b2b;
-}
-
 /* Place the navbar at the bottom of the page */
 .botNav {
   background-color: var(--gray-color);

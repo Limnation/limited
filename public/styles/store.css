@@ -9,18 +9,19 @@
   --blue-color: #3f83ff;
   --purple-color: #5c46e7;
   --gray-color: #252b2b;
+  --background-color: #000000;
 }
 
 /* User/nav Section */
 .hero-section {
-  background-color: #000000;
+  background-color: var(--background-color);
 }
 
 /* Selection Section */
 .selection-section {
   width: 96%;
   padding: 2% 2% 0% 2%;
-  background-color: #000000;
+  background-color: var(--background-color);
 }
 
 /* aside Section */
@@ -51,6 +52,7 @@ aside h3 {
   font-size: 27px;
   color: var(--yellow-color);
   text-align: left;
+  cursor: pointer;
 }
 
 /* Poducts Section */
@@ -71,22 +73,25 @@ aside h3 {
   padding: 0px 4.5% 0px 4.5%;
 }
 
-.product .product-name {
+.product-name {
   font-family: var(--primary-fonts);
   font-size: 24px;
   color: var(--green-color);
-  width: 45%;
+  width: 60%;
   display: inline-block;
+  vertical-align: top;
   padding: 0px 0px 0px 4.5%;
+  margin: 5px 0px 5px 0px;
 }
 
-.product .product-price {
+.product-price {
   font-family: var(--primary-fonts);
   font-size: 30px;
   color: var(--blue-color);
-  width: 45%;
+  width: 30%;
   display: inline-block;
   padding: 0px 0% 4.5px 0px;
+  margin: 5px 0px 5px 0px;
 }
 
 /* Medium devices (Small Mobile phones, 400px to 599px) */
