@@ -124,16 +124,76 @@ a:hover {
 
 /* Medium devices (Ipad, 768px and 1023px) */
 @media only screen and (min-width: 768px) {
+  /* Hero Section */
+  .hero-section {
+    max-height: 769px;
+  }
+
+  .hero-logo-background {
+    width: 100%;
+    left: -13%;
+    top: 13%;
+  }
+
+  .hero-logo-background img {
+    width: 1000px;
+  }
+
+  .hero-logo {
+    top: 25%;
+    width: 100%;
+  }
+
+  .hero-logo img {
+    width: 665px;
+  }
+
+  /* About Us Section */
+  .about-us-section {
+    display: block;
+    height: auto;
+    min-height: 1160px;
+  }
+
+  .about-text {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  .about-text h3 {
+    padding: 50px 100px 30px 100px;
+    font-size: 70px;
+  }
+
+  .about-text p {
+    padding: 0px 100px 100px 100px;
+    font-size: 30px;
+  }
+
+  .about-image {
+    display: block;
+    width: 700px;
+    height: auto;
+    padding: 0px 0px 70px 0px;
+    margin: 0px auto;
+  }
+
+  .about-image img {
+    width: 700px;
+  }
 }
 
 /* Medium devices (Ipad Pro 1024px and 1223px) */
 @media only screen and (min-width: 1024px) {
-}
-
-/* laptops devices (laptops, 1224px and 1823px) */
-@media only screen and (min-width: 1224px) {
   /* Hero Section */
+  .hero-section {
+    max-height: 969px;
+  }
+
   .hero-logo-background {
+    left: 0%;
+    top: 0%;
     width: 100%;
   }
 
@@ -151,34 +211,18 @@ a:hover {
   }
 
   /* About Us Section */
-  .about-us-section {
-    display: block;
-    height: auto;
-    min-height: 1160px;
-  }
-
   .about-text {
-    display: block;
     height: 610px;
-    width: 100%;
-  }
-
-  .about-text h3 {
-    padding: 50px 100px 30px 100px;
-    font-size: 70px;
-  }
-
-  .about-text p {
-    padding: 0px 100px 100px 100px;
-    font-size: 30px;
   }
 
   .about-image {
-    display: block;
     width: 800px;
     height: 550px;
     padding: 30px 0px 30px 0px;
-    margin: 0px auto;
+  }
+
+  .about-image img {
+    width: 800px;
   }
 }
 
