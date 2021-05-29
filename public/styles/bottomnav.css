@@ -17,18 +17,18 @@
 }
 
 .bottomNav {
-  display: inline-block;
+  display: block;
   background-color: var(--gray-color);
   overflow: hidden;
   bottom: 0;
-  width: 40%;
-  padding: 50px 0px;
+  width: 100;
+  padding: 45px 0px;
 }
 
 .bottomNav p {
   font-family: var(--primary-fonts);
-  font-size: 30px;
-  padding: 0px 20px 0px 400px;
+  font-size: 28px;
+  padding: 0px 20px 0px 50px;
   width: 100%;
 }
 
@@ -38,9 +38,9 @@
   color: var(--light-blue-color);
   font-family: var(--primary-fonts);
   text-align: left;
-  padding: 10px 20px 10px 400px;
+  padding: 10px 20px 10px 50px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 /* Changes the color of links on hover */
@@ -54,46 +54,36 @@
 }
 
 .social {
-  display: inline-block;
-  width: 59%;
-  padding: 50px 0px;
-  vertical-align: top;
+  display: block;
+  width: 100%;
+  padding: 0px 0px 45px 50px;
 }
 
 .social p {
   font-family: var(--primary-fonts);
-  font-size: 30px;
+  font-size: 28px;
   padding: 0px 0px 20px 0px;
 }
 
 .social .fab {
   margin-right: 10px;
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   line-height: 32px;
   text-align: center;
   color: var(--light-blue-color);
 }
 
 .fa-facebook {
-  width: 60px;
-}
-
-/* Medium devices (Small Mobile phones, 400px to 599px) */
-@media only screen and (min-width: 400px) {
+  width: 40px;
 }
 
 /* Mobile devices (large Mobile phones, 600px to 767px) */
 @media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (Ipad, 768px and 1023px) */
-@media only screen and (min-width: 768px) {
   /* Place the navbar at the bottom of the page */
   .bottomNav {
-    display: inline-block;
-    bottom: 0;
-    width: 40%;
+    display: block;
+    width: 100%;
     padding: 50px 0px;
   }
 
@@ -112,6 +102,52 @@
   }
 
   .social {
+    display: block;
+    width: 100%;
+    padding: 0px 0px 50px 100px;
+  }
+
+  .social p {
+    font-size: 30px;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .social .fab {
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .fa-facebook {
+    width: 40px;
+  }
+}
+
+/* Medium devices (Ipad, 768px and 1023px) */
+@media only screen and (min-width: 768px) {
+  /* Place the navbar at the bottom of the page */
+  .bottomNav {
+    display: inline-block;
+    bottom: 0;
+    width: 40%;
+    padding: 50px 0px;
+  }
+
+  .bottomNav p {
+    padding: 0px 20px 0px 100px;
+  }
+
+  /* Style the links inside the navigation bar */
+  .bottomNav a {
+    display: block;
+    text-align: left;
+    padding: 10px 20px 10px 100px;
+    font-size: 25px;
+  }
+
+  .social {
     display: inline-block;
     width: 59%;
     padding: 50px 0px;
@@ -119,7 +155,6 @@
   }
 
   .social p {
-    font-size: 30px;
     padding: 0px 0px 20px 0px;
   }
 
