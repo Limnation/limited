@@ -295,7 +295,7 @@ a:hover {
   }
 
   .hero-logo-background {
-    left: 0%;
+    left: -22%;
     top: 0%;
     width: 100%;
   }
@@ -305,7 +305,7 @@ a:hover {
   }
 
   .hero-logo {
-    top: 19%;
+    top: 22%;
     width: 100%;
   }
 
@@ -329,6 +329,15 @@ a:hover {
   }
 }
 
+/* laptops devices (laptops, 1224px and 1823px) */
+@media only screen and (min-width: 1224px) {
+  .hero-logo-background {
+    left: -10%;
+    top: 0%;
+    width: 100%;
+  }
+}
+
 /* Desktops (Desktops, 1824px and up) */
 @media only screen and (min-width: 1824px) {
   /* Hero Section */
@@ -337,6 +346,8 @@ a:hover {
   }
 
   .hero-logo-background {
+    left: 0%;
+    top: 0%;
     width: 100%;
   }
 

@@ -89,14 +89,6 @@
 
 /* Medium devices (Ipad, 768px and 1023px) */
 @media only screen and (min-width: 768px) {
-}
-
-/* Medium devices (Ipad Pro 1024px and 1223px) */
-@media only screen and (min-width: 1024px) {
-}
-
-/* laptops devices (laptops, 1224px and 1823px) */
-@media only screen and (min-width: 1224px) {
   /* Place the navbar at the bottom of the page */
   .bottomNav {
     display: inline-block;
