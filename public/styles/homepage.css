@@ -192,6 +192,13 @@ a:hover {
   }
 }
 
+/* Mobile devices (large Mobile phones, 500px to 767px) */
+@media only screen and (min-width: 500px) {
+  .hero-logo-background {
+    left: -20%;
+  }
+}
+
 /* Mobile devices (large Mobile phones, 600px to 767px) */
 @media only screen and (min-width: 600px) {
   /* Hero Section */
@@ -201,7 +208,7 @@ a:hover {
 
   .hero-logo-background {
     width: 100%;
-    left: -30%;
+    left: -25%;
     top: 11%;
   }
 
@@ -252,6 +259,11 @@ a:hover {
 
 /* Medium devices (Ipad, 768px and 1023px) */
 @media only screen and (min-width: 768px) {
+  /* background image */
+  .hero-logo-background img {
+    width: 1100px;
+  }
+
   /* Hero Section */
   .hero-section {
     max-height: 769px;
@@ -330,10 +342,19 @@ a:hover {
   }
 }
 
-/* laptops devices (laptops, 1224px and 1823px) */
+/* laptops devices (laptops, 1224px and 1424px) */
 @media only screen and (min-width: 1224px) {
   .hero-logo-background {
     left: -10%;
+    top: 0%;
+    width: 100%;
+  }
+}
+
+/* laptops devices (laptops, 1450px and 1823px) */
+@media only screen and (min-width: 1224px) {
+  .hero-logo-background {
+    left: 0%;
     top: 0%;
     width: 100%;
   }
