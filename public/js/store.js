@@ -100,11 +100,11 @@ const renderType = (data) => {
     })
 }
 
+// initial functions to populate all products to the store page
 function init() {
     getProducts();
     getTypes()
 }
-
 
 
 init();
