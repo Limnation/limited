@@ -1,4 +1,16 @@
-/* font-family: 'Caveat', cursive; */
+:root {
+  --primary-fonts: "Caveat", "cursive";
+  --light-blue-color: #66dbec;
+  --red-color: #ee0300;
+  --orange-color: #ef7616;
+  --yellow-color: #f7d422;
+  --green-color: #5cfc01;
+  --blue-color: #3f83ff;
+  --purple-color: #5c46e7;
+  --gray-color: #252b2b;
+  --background: #000000;
+}
+
 /* @375px phone */
 * {
   margin: 0;

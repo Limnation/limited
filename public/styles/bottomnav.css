@@ -1,11 +1,24 @@
+/* Use Root Example: font-family: var(--primary-fonts); */
+:root {
+  --primary-fonts: "Caveat", "cursive";
+  --light-blue-color: #66dbec;
+  --red-color: #ee0300;
+  --orange-color: #ef7616;
+  --yellow-color: #f7d422;
+  --green-color: #5cfc01;
+  --blue-color: #3f83ff;
+  --purple-color: #5c46e7;
+  --gray-color: #252b2b;
+}
+
 /* Place the navbar at the bottom of the page */
 .botNav {
-  background-color: #252b2b;
+  background-color: var(--gray-color);
 }
 
 .bottomNav {
   display: inline-block;
-  background-color: #252b2b;
+  background-color: var(--gray-color);
   overflow: hidden;
   bottom: 0;
   width: 40%;
@@ -13,7 +26,7 @@
 }
 
 .bottomNav p {
-  font-family: "Caveat", "cursive";
+  font-family: var(--primary-fonts);
   font-size: 30px;
   padding: 0px 20px 0px 400px;
   width: 100%;
@@ -22,22 +35,22 @@
 /* Style the links inside the navigation bar */
 .bottomNav a {
   display: block;
-  color: #66dbec;
-  font-family: "Caveat", "cursive";
+  color: var(--light-blue-color);
+  font-family: var(--primary-fonts);
   text-align: left;
   padding: 10px 20px 10px 400px;
   text-decoration: none;
   font-size: 25px;
 }
 
-/* Change the color of links on hover */
+/* Changes the color of links on hover */
 .bottomNav a:hover {
-  color: #4c44dd;
+  color: var(--purple-color);
 }
 
-/* Add a color to the active/current link */
+/* Added a color to the active/current link */
 .bottomNav a.active {
-  color: #4c44dd;
+  color: var(--purple-color);
 }
 
 .social {
@@ -48,7 +61,7 @@
 }
 
 .social p {
-  font-family: "Caveat", "cursive";
+  font-family: var(--primary-fonts);
   font-size: 30px;
   padding: 0px 0px 20px 0px;
 }
@@ -59,9 +72,91 @@
   width: 60px;
   line-height: 32px;
   text-align: center;
-  color: #66dbec;
+  color: var(--light-blue-color);
 }
 
 .fa-facebook {
   width: 60px;
+}
+
+/* Medium devices (Small Mobile phones, 400px to 599px) */
+@media only screen and (min-width: 400px) {
+}
+
+/* Mobile devices (large Mobile phones, 600px to 767px) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (Ipad, 768px and 1023px) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Medium devices (Ipad Pro 1024px and 1223px) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* laptops devices (laptops, 1224px and 1823px) */
+@media only screen and (min-width: 1224px) {
+  /* Place the navbar at the bottom of the page */
+  .bottomNav {
+    display: inline-block;
+    bottom: 0;
+    width: 40%;
+    padding: 50px 0px;
+  }
+
+  .bottomNav p {
+    font-size: 30px;
+    padding: 0px 20px 0px 100px;
+    width: 100%;
+  }
+
+  /* Style the links inside the navigation bar */
+  .bottomNav a {
+    display: block;
+    text-align: left;
+    padding: 10px 20px 10px 100px;
+    font-size: 25px;
+  }
+
+  .social {
+    display: inline-block;
+    width: 59%;
+    padding: 50px 0px;
+    vertical-align: top;
+  }
+
+  .social p {
+    font-size: 30px;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .social .fab {
+    margin-right: 10px;
+    height: 60px;
+    width: 60px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .fa-facebook {
+    width: 60px;
+  }
+}
+
+/* Desktops (Desktops, 1824px and up) */
+@media only screen and (min-width: 1824px) {
+  /* Place the navbar at the bottom of the page */
+  .bottomNav p {
+    padding: 0px 20px 0px 400px;
+  }
+
+  /* Style the links inside the navigation bar */
+  .bottomNav a {
+    padding: 10px 20px 10px 400px;
+  }
+}
+
+/* Large Desktops devices (Desktops, 1920px and up) */
+@media only screen and (min-width: 1920px) {
 }
