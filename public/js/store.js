@@ -62,40 +62,31 @@ function generateProductsHtml(product) {
 
 function generateTypesHtml(type) {
     return `
-    <li class="li-footwear" value="${type.id}"><button type="button" class="li-button">${type.type_name}</button></li>`
+    <li class="li-footwear" value="${type.id}">${type.type_name}</li>`
 };
 
-
-
-$(document).ready(function() {
-    $(".li-button").click(function() {
-
-        alert('The button was clicked');
-
-        console.log("button clicked");
-        filterTypes();
-    });
-
-    const filterTypes = () => {
-
-        console.log('heard the click');
-        // console.log(value);
-        // fetch(`api/searches/${value}`, {
-        //     method: 'GET',
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     }
-        // })
-        // .then(function (response) {
-        //     return response.json();
-        // })
-        // .then(function (data) {
-        //     renderType(data);
-        //     console.log(data);
-        // });
-    
-    };
+$(".ul-footwear").on('click', '.li-footwear', function() {
+    filterTypes();
 });
+
+const filterTypes = () => {
+    console.log('heard the click');
+    console.log(value);
+    fetch(`api/searches/${value}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        renderType(data);
+        console.log(data);
+    });     
+};
+
 
 
 function init() {
