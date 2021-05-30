@@ -15,7 +15,7 @@ li {
   padding: 10px 10px 10px 10px;
 }
 
-li a {
+li {
   display: block;
   text-align: center;
   font-family: "Caveat", "cursive";
@@ -23,25 +23,37 @@ li a {
   font-size: 22px;
 }
 
-.login-logout a {
+.login {
   color: #56fa00;
+  cursor: pointer;
 }
 
-.joins-username a {
+.joins {
   color: #fdd332;
+  cursor: pointer;
 }
 
-.userIcon img {
+.logout {
+  color: #56fa00;
+  cursor: pointer;
+}
+
+.username {
+  color: #fdd332;
+  cursor: pointer;
+}
+
+.userIcon {
   display: none;
 }
 
 /* Mobile devices (large Mobile phones, 600px to 767px) */
 @media only screen and (min-width: 600px) {
-  li a {
+  li {
     font-size: 30px;
   }
 
-  .userIcon img {
-    display: inline;
+  .userIcon {
+    display: block;
   }
 }
