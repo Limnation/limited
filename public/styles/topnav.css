@@ -15,7 +15,7 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #5b46e7c9;
   overflow: hidden;
   z-index: 100;
 }
@@ -247,7 +247,7 @@ body {
 
   /* Add a dark background on topnav links and the dropdown button on hover */
   .topnav a:hover {
-    color: #000000;
+    color: var(--orange-color);
   }
 
   /* Add a black background color to the top navigation */

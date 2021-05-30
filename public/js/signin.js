@@ -34,6 +34,8 @@ let usernameCookie = document.cookie;
 let cookiedusername = usernameCookie.substr(9);
 
 const toggleHeaderLoggedIn = (username) => {
+  let usernameCookie = document.cookie;
+  let cookiedusername = usernameCookie.substr(9);
   $(".login").remove();
   $(".joins").remove();
   $(".ul-user-section").append(`<li class="logout">Logout</li>`);
@@ -53,6 +55,8 @@ const toggleHeaderLogout = () => {
 
 $(".ul-user-section").on("click", ".logout", function() {
   if (usernameCookie === usernameCookie && usernameCookie !== "") {
+    document.cookie =
+      "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     toggleHeaderLogout();
   }
 });
