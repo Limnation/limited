@@ -33,7 +33,7 @@ li {
   cursor: pointer;
 }
 
-.userIcon img {
+.userIcon {
   display: none;
 }
 
@@ -43,7 +43,7 @@ li {
     font-size: 30px;
   }
 
-  .userIcon img {
-    display: inline;
+  .userIcon {
+    display: block;
   }
 }

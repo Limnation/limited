@@ -64,13 +64,13 @@ function generateSignInHtml() {
             </div>
 
             <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="unamesi"><i class="fas fa-user"></i></label>
+                <input type="text" placeholder="Username" name="unamesi" required>
 
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="pswsi"><i class="fas fa-lock"></i></label>
+                <input type="password" placeholder="Password" name="pswsi" required>
                 
-                <button class="submit-btn" type="submit">Sign In</button>
+                <button class="submit-btn" type="submit">Join Us</button>
             </div>
         </form>
     </div>

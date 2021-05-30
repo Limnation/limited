@@ -1,9 +1,6 @@
+// closes the ioin Us modal by setting display = "none"
 const closeJoin = () => {
   document.getElementById("id01").style.display = "none";
-};
-
-const closeSignIn = () => {
-  document.getElementById("id02").style.display = "none";
 };
 
 const createProfile = async (event) => {
