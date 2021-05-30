@@ -23,12 +23,22 @@ li {
   font-size: 22px;
 }
 
-.login-logout {
+.login {
   color: #56fa00;
   cursor: pointer;
 }
 
-.joins-username {
+.joins {
+  color: #fdd332;
+  cursor: pointer;
+}
+
+.logout {
+  color: #56fa00;
+  cursor: pointer;
+}
+
+.username {
   color: #fdd332;
   cursor: pointer;
 }

@@ -21,6 +21,7 @@ const signInHandler = async (event) => {
     });
 
     if (response.ok) {
+      document.cookie = `username=${username}`;
       closeSignIn();
       toggleHeaderLoggedIn(username);
     } else {
@@ -29,30 +30,37 @@ const signInHandler = async (event) => {
   }
 };
 
+let usernameCookie = document.cookie;
+let cookiedusername = usernameCookie.substr(9);
+
 const toggleHeaderLoggedIn = (username) => {
-  $(".login-logout").remove();
-  $(".joins-username").remove();
-  $(".ul-user-section").append(`<li class="login-logout">Logout</li>`);
-  $(".ul-user-section").append(`<li class="joins-username">${username}</li>`);
+  $(".login").remove();
+  $(".joins").remove();
+  $(".ul-user-section").append(`<li class="logout">Logout</li>`);
+  $(".ul-user-section").append(`<li class="username">${cookiedusername}</li>`);
   $(".ul-user-section").append(
     `<li class="userIconE"><img class="userIcon" src="images/nav/top/userIcon.png" alt="User Icon" /></li>`
   );
 };
 
 const toggleHeaderLogout = () => {
-  $(".login-logout").remove();
-  $(".joins-username").remove();
-  $(".ul-user-section").append(`<li class="login-logout">Sign In</li>`);
-  $(".ul-user-section").append(`<li class="joins-username">Join Us</li>`);
-  $(".ul-user-section").remove();
+  $(".logout").remove();
+  $(".username").remove();
+  $(".ul-user-section").append(`<li class="login">Sign In</li>`);
+  $(".ul-user-section").append(`<li class="joins">Join Us</li>`);
+  $(".userIcon").remove();
 };
 
-
-$(".ul-user-section").on("click", function(){
-    if(cookie) {
-        toggleHeaderLogout();
-    }
+$(".ul-user-section").on("click", ".logout", function() {
+  if (usernameCookie === usernameCookie && usernameCookie !== "") {
+    toggleHeaderLogout();
+  }
 });
 
-
 $(".modal-section").on("submit", ".sign-in-form", signInHandler);
+
+$(document).ready(function() {
+  if (usernameCookie === usernameCookie && usernameCookie !== "") {
+    toggleHeaderLoggedIn();
+  }
+});

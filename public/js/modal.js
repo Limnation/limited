@@ -1,5 +1,5 @@
 // Opens Join Modal
-$(".ul-user-section").on("click", ".joins-username", function() {
+$(".ul-user-section").on("click", ".joins", function() {
   document.getElementById("id01").style.display = "block";
 });
 
@@ -46,7 +46,7 @@ function generateJoinHtml() {
 }
 
 // Opens Sign In Modal
-$(".ul-user-section").on("click", ".login-logout", function() {
+$(".ul-user-section").on("click", ".login", function() {
   document.getElementById("id02").style.display = "block";
 });
 
