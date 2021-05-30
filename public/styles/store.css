@@ -66,7 +66,7 @@ aside h3 {
   display: block;
   width: 100%;
   min-height: 700px;
-  padding: 0px 0px 0px 0%;
+  padding: 0px 0px 50px 0%;
 }
 
 .product {
@@ -167,7 +167,7 @@ aside h3 {
     display: block;
     width: 100%;
     min-height: 800px;
-    padding: 0px 0px 0px 0%;
+    padding: 0px 0px 100px 0%;
   }
 
   .product {
@@ -209,6 +209,6 @@ aside h3 {
     display: inline-block;
     width: 80%;
     min-height: 796px;
-    padding: 0px 0px 0px 0%;
+    padding: 0px 0px 125px 0%;
   }
 }
