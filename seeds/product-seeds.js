@@ -137,7 +137,7 @@ const productData = [
   },
   {
     product_name: "DC Chicks",
-    image_name: "dc chicks",
+    image_name: "dc-chicks",
     stock: 10,
     price: 59.99,
     type_id: 4,
