@@ -58,13 +58,4 @@ const createProfile = async (event) => {
   }
 };
 
-function cats(event) {
-  event.preventDefault();
-  alert("cats r cool");
-}
-
-// document.querySelector(".join-us-form").addEventListener("submit", cats);
-
 $(".modal-section").on("submit", ".join-us-form", createProfile);
-
-// $(".join-us-form").on("submit", createProfile);

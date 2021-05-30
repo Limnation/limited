@@ -17,26 +17,26 @@ function generateJoinHtml() {
             </div>
 
             <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="uname"><i class="fas fa-user"></i></label>
+                <input type="text" placeholder="Username" name="uname" required>
 
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="psw"><i class="fas fa-lock"></i></label>
+                <input type="password" placeholder="Password" name="psw" required>
 
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+                <label for="email"><i class="far fa-envelope"></i></label>
+                <input type="email" placeholder="Email" name="email" required>
                 
-                <label for="street"><b>Street</b></label>
-                <input type="text" placeholder="Enter Street" name="street" required>
+                <label for="street"><i class="fas fa-address-card"></i></i></label>
+                <input type="street" placeholder="Street" name="street" required>
 
-                <label for="city"><b>City</b></label>
-                <input type="text" placeholder="Enter City" name="city" required>
+                <label for="city"></label>
+                <input type="city" placeholder="City" name="city" required>
 
-                <label for="state"><b>State</b></label>
-                <input type="text" placeholder="Enter State" name="state" required>
+                <label for="state"></label>
+                <input type="state" placeholder="State" maxlength="2" name="state" required>
 
-                <label for="zip-code"><b>Zip Code</b></label>
-                <input type="text" placeholder="Enter Zip Code" name="zip-code" required>
+                <label for="zip-code"></label>
+                <input type="zip-code" placeholder="Zip Code" name="zip-code" maxlength="10" required>
                 
                 <button class="submit-btn" type="submit">Join Us</button>
             </div>

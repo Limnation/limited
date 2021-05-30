@@ -1,7 +1,8 @@
 /* Full-width input fields */
 input[type="text"],
-input[type="password"] {
-  width: 100%;
+input[type="password"],
+input[type="email"] {
+  width: 423px;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -9,14 +10,56 @@ input[type="password"] {
   box-sizing: border-box;
 }
 
+.fas,
+.far {
+  width: 40px;
+}
+
 label {
+  font-size: 25px;
   color: var(--light-blue-color);
   font-family: var(--primary-fonts);
 }
 
+input[type="street"] {
+  width: 423px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+input[type="city"] {
+  width: 48%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+input[type="state"] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+input[type="zip-code"] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
 /* Set a style for all buttons */
 button {
-  background-color: #04aa6d;
+  background-color: var(--light-blue-color);
   color: #000000;
   padding: 14px 20px;
   margin: 8px 0;
@@ -76,9 +119,9 @@ span.psw {
 /* Modal Content/Box */
 .modal-content {
   background-color: #000000;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #000000;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 95%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
@@ -129,5 +172,11 @@ span.psw {
   }
   .cancelbtn {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .modal-content {
+    width: 500px;
   }
 }
