@@ -1,3 +1,4 @@
+var slug = require('slug')
 const { Product } = require("../models");
 
 // how to called images in html/hs `/images/homepage/${Product.product_name}.jpg`
