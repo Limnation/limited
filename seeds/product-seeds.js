@@ -285,7 +285,7 @@ const productData = [
   },
   {
     product_name: "Iron Man's Last Stand",
-    image_name: slug("Iron Man's Last Stand"),
+    image_name: slug("Iron Man"),
     stock: 10,
     price: 79.99,
     type_id: 3,
