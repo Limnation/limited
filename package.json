@@ -15,7 +15,8 @@
     "express": "^4.17.0",
     "express-handlebars": "^3.1.0",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.6.2"
+    "sequelize": "^6.6.2",
+    "slug": "^5.0.1"
   },
   "devDependencies": {
     "bcrypt": "^5.0.1",
