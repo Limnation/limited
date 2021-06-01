@@ -54,11 +54,9 @@ const toggleHeaderLogout = () => {
 };
 
 $(".ul-user-section").on("click", ".logout", function() {
-  if (usernameCookie === usernameCookie && usernameCookie !== "") {
     document.cookie =
       "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     toggleHeaderLogout();
-  }
 });
 
 $(".modal-section").on("submit", ".sign-in-form", signInHandler);
