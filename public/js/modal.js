@@ -70,7 +70,7 @@ function generateSignInHtml() {
                 <label for="pswsi"><i class="fas fa-lock"></i></label>
                 <input type="password" placeholder="Password" name="pswsi" required>
                 
-                <button class="submit-btn" type="submit">Join Us</button>
+                <button class="submit-btn" type="submit">Sign In</button>
             </div>
         </form>
     </div>
