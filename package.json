@@ -1,26 +1,28 @@
 {
-  "name": "node-boilerplate",
+  "name": "limited",
   "version": "1.0.0",
-  "description": "Project 2",
+  "description": "Project-2",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "npm run lint && cross-env NODE_ENV=test mocha -u tdd --reporter spec --exit"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Limnation/limited.git"
+  },
+  "author": "Scott Erwin and  Willie Libet",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Limnation/limited/issues"
+  },
+  "homepage": "https://github.com/Limnation/limited#readme",
   "dependencies": {
-    "dotenv": "^8.0.0",
-    "express": "^4.17.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
     "mysql2": "^2.2.5",
     "sequelize": "^6.6.2",
     "slug": "^5.0.1"
-  },
-  "devDependencies": {
-    "bcrypt": "^5.0.1",
-    "chai": "^4.2.0",
-    "chai-http": "^4.3.0",
-    "cross-env": "^5.2.0",
-    "mocha": "^6.1.4",
-    "prettier": "^1.17.1"
   }
 }
