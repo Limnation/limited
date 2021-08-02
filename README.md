@@ -65,8 +65,8 @@ For future releases, we plan on adding a shopping cart, a place the user can upl
 
 ## Authors and acknowledgment
 
-- Scott Erwin - Javascript, Models, Routes, Seeds, Database, HTML, CSS, Software Deployment, Design and Assets Creation
+- Scott Erwin | email: scottallenerwin@gmail.com - Javascript, Models, Routes, Seeds, Database, HTML, CSS, Software Deployment, Design and Assets Creation
 - Willie Libet - Javascript, Models, Routes, Seeds, Database, Design Feedback, and Code Reviews
-- Zachary Eggert - Javascript, Routes and Models
-- Winsor Sineus - Team Manager and Routes
-- Sarah Martin - Agile Roadmap and CSS
+- Zachary Eggert | email: zreggert@gmail.com - Javascript, Routes and Models
+- Winsor Sineus | email: sineusw@gmail.com - Team Manager and Routes
+- Sarah Martin | sv7337@outlook.com - Agile Roadmap and CSS
